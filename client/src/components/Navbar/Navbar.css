@@ -1,0 +1,9 @@
+.brand-logo {
+    position: absolute;
+    margin-left:30px;
+  }
+
+  .statusMessage {
+    position: absolute;
+    right:30px;
+}
