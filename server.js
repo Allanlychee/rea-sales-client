@@ -4,6 +4,26 @@ const path = require('path')
 var bodyparser = require('body-parser')
 const PORT = process.env.PORT || 3001
 const app = express()
+require("./control/dotenv").config();
+
+var Zillow = require('node-zillow');
+
+//Instantiate
+var zillow = new Zillow(keys.ZWSID);
+
+var parameters = {
+  zpid:111111
+}
+
+zillow.get('GetZestimate', parameters)
+.then(function(results){
+  console.log(results)
+})
+
+
+
+
+
 mongoose.connect('mongodb://localhost/myusersDB')
 
 app.use(bodyparser.urlencoded({extended: true}))
