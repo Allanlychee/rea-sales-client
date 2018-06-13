@@ -1,15 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
+import AppRouter from './components/approuter'
 import axios from 'axios'
-import Navbar from "./components/Navbar"
-
-let clickMessage = "Test State"
 
 class App extends Component {
-
-  state = {
-    clickMessage
-  }
-
   componentDidMount () {
     axios.post('/users', {
       name: 'Pablo',
@@ -29,11 +22,13 @@ class App extends Component {
         console.log(e)
       })
   }
+
+
   render () {
     return (
-      <Navbar 
-      statusMessage={this.state.clickMessage}
-      />
+      <Fragment>
+        <AppRouter />
+      </Fragment>
     )
   }
 }

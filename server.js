@@ -4,29 +4,26 @@ const path = require('path')
 var bodyparser = require('body-parser')
 const PORT = process.env.PORT || 3001
 const app = express()
-require("./control/dotenv").config();
-
-var Zillow = require('node-zillow');
-
-//Instantiate
-var zillow = new Zillow(keys.ZWSID);
-
-var parameters = {
-  zpid:111111
-}
-
-zillow.get('GetZestimate', parameters)
-.then(function(results){
-  console.log(results)
-})
+require("dotenv").config();
+const keys = require("./control/keys.js")
 
 
+// var Zillow = require('node-zillow');
 
+// var Zillowkey = "X1-ZWz18iyx0whbm3_7galu"
+// //Instantiate
+// var zillow = new Zillow(Zillowkey);
 
+// zillow.get('GetRegionChildren', {
+//   state: 'NV'
+// })
+//   .then(function (results) {
+//     console.log(results.response.list.region)
+//   })
 
 mongoose.connect('mongodb://localhost/myusersDB')
 
-app.use(bodyparser.urlencoded({extended: true}))
+app.use(bodyparser.urlencoded({ extended: true }))
 app.use(bodyparser.json())
 app.use(require('./routes/apiroutes'))
 
