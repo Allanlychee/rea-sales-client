@@ -11,6 +11,7 @@ const Navbar = props => (
         <li><Link to='/'>Main</Link></li>
         <li><Link to='/info'>Info</Link></li>
         <li><Link to='/contact'>Contact</Link></li>
+        <li><Link to='/userReg'>userReg</Link></li>
       </ul>
     </div>
   </nav>

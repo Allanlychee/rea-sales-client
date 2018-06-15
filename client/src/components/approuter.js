@@ -4,6 +4,7 @@ import Navbar from './Navbar'
 import Main from './main'
 import Info from './info'
 import Contact from './contact'
+import userReg from './userReg'
 
 
 let statusMessage = "Test State"
@@ -24,6 +25,7 @@ class AppRouter extends Component {
           <Route exact path='/' component={Main} />
           <Route exact path='/info' component={Info} />
           <Route exact path='/contact' component={Contact} />
+          <Route exact path='/userReg' component={userReg} />
         </div>
       </Router>
     )

@@ -1,0 +1,29 @@
+
+.userProfilePhoto {
+    background-image: url("userReg-bg.png");
+    background-color: #cccccc;
+}
+body {
+    background-color: rgb(79, 83, 83);
+    color: white;
+}
+.submitbtn {
+    background-color:  rgb(79, 83, 83);
+    align-content: center;
+    width: 100%;
+}
+.btn-flat {
+    align-content: center;
+    color: white;
+    
+}
+.regContainer {
+    background-color: white;
+}
+.material-icons {
+    vertical-align: middle;
+   object-position: right;
+}
+form {
+    background-color: white;
+}
