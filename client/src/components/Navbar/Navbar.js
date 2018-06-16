@@ -1,21 +1,50 @@
-import React from 'react'
+import React, { Component, Fragment } from "react";
 import { Link } from 'react-router-dom'
-import './Navbar.css'
 
-const Navbar = props => (
-  <div className = 'navbar-fixed transparent'>
-  <nav className='transparent'>
-    <div className='nav-wrapper transparent'>
-      <a className='brand-logo center'> Real Estate {props.statusMessage}</a>
-      <ul id='nav-mobile' className='right hide-on-med-and-down transparent'>
-        <li><Link to='/'>Main</Link></li>
-        <li><Link to='/info'>Info</Link></li>
-        <li><Link to='/contact'>Contact</Link></li>
-        <li><Link to='/userReg'>userReg</Link></li>
-      </ul>
-    </div>
-  </nav>
-  </div>
-)
+export default class NavBar extends Component {
+  render() {
+    return (
+      <nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
+        <div className="container">
+        <Fragment>
+          <a className="navbar-brand" href="landing.html">
+            ARIES AND FRIENDS
+          </a>
+          </Fragment>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#mobile-nav"
+          >
+            <span className="navbar-toggler-icon" />
+          </button>
 
-export default Navbar;
+          <div className="collapse navbar-collapse" id="mobile-nav">
+            <ul className="navbar-nav mr-auto">
+              <li className="nav-item">
+                <a className="nav-link">
+                  {" "}
+                  <Link to='/'>Home</Link>
+                </a>
+              </li>
+            </ul>
+
+            <ul className="navbar-nav ml-auto">
+              <li className="nav-item">
+                <a className="nav-link">
+                <Link to='/Register'>Register</Link>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link">
+                  <Link to='/Login'>Login</Link>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    );
+  }
+}
