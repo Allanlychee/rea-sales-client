@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from "react";
-import { Link } from 'react-router-dom'
 
 export default class NavBar extends Component {
   render() {
@@ -21,20 +20,24 @@ export default class NavBar extends Component {
           </button>
 
           <div className="collapse navbar-collapse" id="mobile-nav">
-            <ul className="navbar-nav mr-auto">
+            {/* <ul className="navbar-nav mr-auto">
               <li className="nav-item">
                 <a className="nav-link" href="/">
-                  {" "}
+                Home
                 </a>
               </li>
-            </ul>
+            </ul> */}
 
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <Link to='/Register'>Register</Link>
+              <a className="nav-link" href="/Register">
+                Register
+                </a>
               </li>
               <li className="nav-item">
-                  <Link to='/Login'>Login</Link>
+              <a className="nav-link" href="/Login">
+                Login
+                </a>
               </li>
               <li className="nav-item">
                   <Link to='/Buyer'>Buyer</Link>
