@@ -31,13 +31,10 @@ export default class NavBar extends Component {
 
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <a className="nav-link" href="/Register">
-              
-                </a>
+                <Link to='/Register'>Register</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/Login">
-                </a>
+                  <Link to='/Login'>Login</Link>
               </li>
             </ul>
           </div>
