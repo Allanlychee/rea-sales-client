@@ -5,7 +5,7 @@ import Home from './Home/Home'
 import Register from './Auth/Register/Register'
 import Login from './Auth/Login/Login'
 import Footer from "./Footer/Footer"
-
+import Buyer from "./Profile/HomeBuyerProf/buyer"
 
 
 let statusMessage = ""
@@ -26,6 +26,7 @@ class AppRouter extends Component {
           <Route exact path='/' component={Home} />
           <Route exact path='/Register' component={Register} />
           <Route exact path='/Login' component={Login} />
+          <Route exact path='/Buyer' component={Buyer} />
           <Footer/>
         </div>
       </Router>
