@@ -7,7 +7,7 @@ export default class NavBar extends Component {
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
         <div className="container">
         <Fragment>
-          <a className="navbar-brand" href="landing.html">
+          <a className="navbar-brand" href='/'>
             ARIES AND FRIENDS
           </a>
           </Fragment>
@@ -23,22 +23,20 @@ export default class NavBar extends Component {
           <div className="collapse navbar-collapse" id="mobile-nav">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
-                <a className="nav-link">
+                <a className="nav-link" href="/">
                   {" "}
-                  <Link to='/'>Home</Link>
                 </a>
               </li>
             </ul>
 
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <a className="nav-link">
-                <Link to='/Register'>Register</Link>
+                <a className="nav-link" href="/Register">
+              
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link">
-                  <Link to='/Login'>Login</Link>
+                <a className="nav-link" href="/Login">
                 </a>
               </li>
             </ul>
