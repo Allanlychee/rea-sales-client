@@ -7,7 +7,7 @@ import Contact from './contact'
 import userReg from './userReg'
 
 
-let statusMessage = "Test State"
+let statusMessage = ""
 
 class AppRouter extends Component {
 
