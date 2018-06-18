@@ -40,7 +40,9 @@ export default class NavBar extends Component {
                 </a>
               </li>
               <li className="nav-item">
-                  <Link to='/Buyer'>Buyer</Link>
+              <a className="nav-link" href="/Buyer">
+                Buyer
+                </a>
               </li>
             </ul>
           </div>
