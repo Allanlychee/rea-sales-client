@@ -5,9 +5,9 @@ export default class NavBar extends Component {
     return (
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
         <div className="container">
-        <Fragment>
-          <a className="navbar-brand" href='/'>
-            ARIES AND FRIENDS
+          <Fragment>
+            <a className="navbar-brand" href='/'>
+              Home
           </a>
           </Fragment>
           <button
@@ -30,18 +30,13 @@ export default class NavBar extends Component {
 
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-              <a className="nav-link" href="/Register">
-                Register
+                <a className="nav-link" href="/Register">
+                  Register
                 </a>
               </li>
               <li className="nav-item">
-              <a className="nav-link" href="/Login">
-                Login
-                </a>
-              </li>
-              <li className="nav-item">
-              <a className="nav-link" href="/Buyer">
-                Buyer
+                <a className="nav-link" href="/Login">
+                  Login
                 </a>
               </li>
             </ul>

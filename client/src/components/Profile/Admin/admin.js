@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 
-class Seller extends Component {
+class Admin extends Component {
   render() {
     return (
       <div>
 
 
-      Hello this is the SELLER's page
-
+ Hello this is the ADMIN's page
 
       
       </div>
@@ -15,4 +14,4 @@ class Seller extends Component {
   }
   }
 
-  export default Seller;
+  export default Admin;

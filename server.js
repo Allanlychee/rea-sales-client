@@ -8,19 +8,6 @@ require("dotenv").config();
 const keys = require("./control/keys.js")
 
 
-// var Zillow = require('node-zillow');
-
-// var Zillowkey = "X1-ZWz18iyx0whbm3_7galu"
-// //Instantiate
-// var zillow = new Zillow(Zillowkey);
-
-// zillow.get('GetRegionChildren', {
-//   state: 'NV'
-// })
-//   .then(function (results) {
-//     console.log(results.response.list.region)
-//   })
-
 mongoose.connect('mongodb://localhost/myusersDB')
 
 app.use(bodyparser.urlencoded({ extended: true }))
