@@ -5,7 +5,6 @@ var bodyparser = require('body-parser')
 const PORT = process.env.PORT || 3001
 const app = express()
 require("dotenv").config();
-const keys = require("./control/keys.js")
 
 
 mongoose.connect('mongodb://localhost/myusersDB')
