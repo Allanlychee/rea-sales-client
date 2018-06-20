@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Map from "../../Map/Map"
+
 
 class Buyer extends Component {
   render() {
@@ -34,7 +34,6 @@ class Buyer extends Component {
             <button type="submit" class="cancelbtn">Cancel</button>
           </div>
         </form>
-<Map />
       </div>
 
       
