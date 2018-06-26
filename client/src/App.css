@@ -2,14 +2,25 @@ img {
     width: 100%;
   }
   
-  .landing {
+  .homeLanding {
     position: relative;
     background: url("./showcase.jpeg") no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 86.7vh;
     margin-top: -24px;
     margin-bottom: -50px;
+    overflow:hidden;
+  }
+  .landing {
+    position: relative;
+    /* background: url("./showcase.jpeg") no-repeat; */
+    background-size: cover;
+    background-position: center;
+    height: 86.7vh;
+    margin-top: -24px;
+    margin-bottom: -50px;
+    overflow:hidden;
   }
   
   .landing-inner {
