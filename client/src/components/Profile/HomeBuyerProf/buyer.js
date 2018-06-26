@@ -1,44 +1,50 @@
 import React, { Component } from "react";
 
-
 class Buyer extends Component {
-  render() {
-    return (
-      <div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="text-center">
-            <img src="https://m.media-amazon.com/images/M/MV5BMjUzZTJmZDItODRjYS00ZGRhLTg2NWQtOGE0YjJhNWVlMjNjXkEyXkFqcGdeQXVyMTg4NDI0NDM@._V1_UY317_CR51,0,214,317_AL_.jpg" class="avatar img-circle img-thumbnail" alt="avatar" />
-            <h6>Upload a different photo...</h6>
-            <input type="file" class="text-center center-block well well-sm" />
-          </div>
-        </div>
+    render() {
+        return (
+            <div>
+                <div className="landing">
+                    <div className="dark-overlay landing-inner text-light">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-md-12 text-center">
+                                    <h1 className="display-3 mb-4">BUYER PAGE</h1>
+                                    <p className="lead">
+                                        {" "}
+                                        Text Here
+                                    </p>
+                                    <hr />
+                                    <a className="btn btn-lg btn-info mr-2" href="#">
+                                        View Matched Houses</a>
+                                    <br />
+                                    <br />
+                                    <a className="btn btn-lg btn-light" href="#">
+                                        Favorite Homes (Sellers)</a>
+                                    <br />
+                                    <br />
 
-        <h1> Hello </h1>
-        <form class="regForm">
-          <p><label for="firstname"><b>First Name:   </b></label>
-            <input type="text" name="firstname" placeholder="quinton" /> </p>
+                                    <div className="dropdown">
+                                        <a className="btn btn-secondary dropdown-toggle" href="/" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Page Views (For Devs Only)
+                                        </a>
+                                        <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <a className="dropdown-item" href="/Admin">Admin Page</a>
+                                            <a className="dropdown-item" href="/Representative">Representative Page</a>
+                                            <a className="dropdown-item" href="/Buyer">Buyer Page</a>
+                                            <a className="dropdown-item" href="/Seller">Seller Page</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-          <p><label for="lastname"><b>Last Name"   </b></label>
-            <input type="text" name="lastname" placeholder="chilla" /> </p>
-          <p><label for="email"><b>Email:   </b></label>
-            <input type="text" name="email" placeholder="a@b.com" /> </p>
-          <p><label for="username"><b>User Name:   </b></label>
-            <input type="text" name="username" placeholder="quinchilla" /> </p>
-          <p><label for="password"><b>Password:   </b></label>
-            <input type="password" name="password" placeholder="AAbb1122!!" /> </p>
-          <label for="password"><b>Confrim Password:   </b></label>
-          <input type="password" name="password-confirm" placeholder="AAbb1122!!" />
 
-          <div class="clearfix">
-            <button type="button" class="updatebtn">Update</button>
-            <button type="submit" class="cancelbtn">Cancel</button>
-          </div>
-        </form>
-      </div>
-
-      
-
-    )
-  }
+            </div>
+        )
+    }
 }
+
 export default Buyer;

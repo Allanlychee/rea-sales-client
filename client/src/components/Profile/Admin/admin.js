@@ -4,32 +4,57 @@ class Admin extends Component {
   render() {
     return (
       <div>
-        <p> Hello this is the ADMIN's page.</p>
-
-
-        <p> <b>($100/Month) ADMIN to BUYER Interaction: </b> </p>
-        <p> For $100 a month, the ADMIN pledges to find X amount of potential homes a month with your preference</p>
-        <ol>
-          <li> ADMIN receives HOUSE PREFERENCE from the BUYER </li>
-          <li> ADMIN is able to find list of potential houses off/on the market based on #BEDROOM #BATH along with their Phone Number
-            <p> Using MLS? API with search? Geotargetting?</p>
-            <p> <b> Dialog: </b> "Hello, I am calling from... and we have someone that is interested in buying your house."</p>
-          </li>
-          <li> Once ADMIN finds a potential SELLER, Admin can store the SELLER'S information
-          <ul>
-              <li> Images found from API </li>
-              <li> Address </li>
-              <li> Description </li>
-              <li> Price </li>
-            </ul>
-          </li>
-          <li> ADMIN then sends the seller information to BUYER through the app (USING CRUD ON THE BACKEND) </li>
-          <li> If BUYER is interested in a specific seller, then the dating begins.</li>
-        </ol>
-
-        <p> <b>($1500/Month) ADMIN to REAL-ESTATE REPRESENTATIVE Interaction: </b> </p>
-      <p> For $1,500 a month, the ADMIN pledges to </p>
-
+        <div className="landing">
+          <div className="dark-overlay landing-inner text-light">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-12 text-center">
+                  <h1 className="display-3 mb-4">ADMIN PAGE</h1>
+                  <p className="lead">
+                    {" "}
+                    Text Here
+                </p>
+                  <hr />
+                  <a className="btn btn-lg btn-info" href="/Admin/View-Match">
+                    View/Match Buyers & Sellers</a>
+                  <br />
+                  <br />
+                  <a className="btn btn-lg btn-light mr-2" href="#">
+                  Add Home Buyer <br />
+                    (?? or only from registed Buyers)</a>
+                  <a className="btn btn-lg btn-light mr-2" href="/Admin/Add-Seller">
+                    Add Home Seller <br />
+                    (Leads from Cold Calling)</a>
+                  <br />
+                  <br />
+                  <a className="btn btn-lg btn-light mr-2" href="#">
+                    View Matches</a>
+                  <br />
+                  <br />
+                  <a className="btn btn-lg btn-light mr-2" href="/Admin/View-Sellers">
+                    View Sellers</a>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <div className="dropdown">
+                    <a className="btn btn-secondary dropdown-toggle" href="/" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Page Views (For Devs Only)
+                     </a>
+                    <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a className="dropdown-item" href="/Admin">Admin Page</a>
+                      <a className="dropdown-item" href="/Representative">Representative Page</a>
+                      <a className="dropdown-item" href="/Buyer">Buyer Page</a>
+                      <a className="dropdown-item" href="/Seller">Seller Page</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
       </div>
