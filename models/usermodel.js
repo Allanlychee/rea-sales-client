@@ -20,6 +20,10 @@ var usermodel = new Schema({
   password: {
     type: String,
     default: "AAbb1122!!"
+  },
+  date: {
+    type: Date,
+    default: Date.now
   }
 });
 

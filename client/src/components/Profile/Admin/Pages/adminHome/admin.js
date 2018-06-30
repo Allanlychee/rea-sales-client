@@ -22,7 +22,7 @@ class Admin extends Component {
                   <a className="btn btn-lg btn-light mr-2" href="#">
                   Add Home Buyer <br />
                     (?? or only from registed Buyers)</a>
-                  <a className="btn btn-lg btn-light mr-2" href="/Admin/Add-Seller">
+                  <a className="btn btn-lg btn-light mr-2" href="/Admin/addhome">
                     Add Home Seller <br />
                     (Leads from Cold Calling)</a>
                   <br />

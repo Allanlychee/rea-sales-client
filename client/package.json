@@ -8,6 +8,7 @@
     "react": "^16.0.0",
     "react-crud-table": "0.0.7",
     "react-dom": "^16.0.0",
+    "react-moment": "^0.7.7",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "^1.1.4"
