@@ -8,11 +8,11 @@ import { List, ListItem } from "../../../../List";
 import { Input, TextArea, FormBtn } from "../../../../Form";
 import Modal from "../../../../Modal";
 import MyMapComponent from "../../../../Map";
-import axios from 'axios';
+
+
 
 class AdminAddHome extends Component {
   state = {
-    image: null,
     homes: [],
     address: "",
     city: "",
@@ -29,7 +29,7 @@ class AdminAddHome extends Component {
   loadHomes = () => {
     API.getHomes()
       .then(res =>
-        this.setState({ homes: res.data, address: "", city: "", state: "", zip: "", price: "", description: "",image: null })
+        this.setState({ homes: res.data, address: "", city: "", state: "", zip: "", price: "", description: "" })
       )
       .catch(err => console.log(err));
   };
@@ -56,7 +56,6 @@ class AdminAddHome extends Component {
         state: this.state.state,
         zip: this.state.zip,
         price: this.state.price,
-        image: this.state.image,
         description: this.state.description
       })
         .then(res => this.loadHomes())
@@ -64,18 +63,7 @@ class AdminAddHome extends Component {
     }
   };
 
-  fileSelectedHandler = event => {
-    this.setState({
-     image: event.target.files[0]
-  })
-}
 
-fileUploadHandler = () => {
-axios.post('/upload')
-.then(res =>{
-  console.log(res)
-})
-}
 
   render() {
     return (
@@ -114,16 +102,6 @@ axios.post('/upload')
                   name="price"
                   placeholder="Price (required)"
                 />
-                <Input
-                onChange = {this.fileSelectedHandler}
-                  method="POST"
-                  action="/upload"
-                  encType="multipart/form-data"
-                  type="file"
-                  name="photo"
-                >
-
-                </Input>
                 <TextArea
                   value={this.state.description}
                   onChange={this.handleInputChange}
@@ -180,7 +158,7 @@ axios.post('/upload')
           </Col>
           <Col size="md-6 sm-12">
            
-          <MyMapComponent />
+          <MyMapComponent/>
           </Col>
         </Row>
       </Container>
