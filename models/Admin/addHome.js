@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 // Create Schema
 var addHomeSchema = new Schema({
   date: {
-    type: String,
+    type: Date,
     default: Date.now
   },
   address: {
