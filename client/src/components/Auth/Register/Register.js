@@ -1,17 +1,21 @@
 import React, { Component } from "react";
+import { Route, Redirect } from 'react-router-dom'
 import axios from "axios";
+import Login from '../Login/Login'
 
 class Register extends Component {
-<<<<<<< HEAD
+  HEAD
   constructor() {
+
     super();
     this.state = {
+      fireRedirect: false,
       firstname: "",
       lastname: "",
       email: "",
       password: "",
       password2: "",
-      errors: {}
+      errors: {},
     };
 
     this.onChange = this.onChange.bind(this);
@@ -21,47 +25,29 @@ class Register extends Component {
   onChange(e) {
     this.setState({ [e.target.name]: e.target.value });
   }
-=======
-  render() {
-    return (
-      <div>
-      {/* firstname, last name, email, username, password, confirm password */}
-   <body class="text-center">
-      <form class="form-signin">
-        <h1 class="h3 mb-3 font-weight-normal">Please register</h1>
-        <label for="inputFirst" class="sr-only">First Name</label>
-        <input type="text" id="inputFirst" class="form-control" placeholder="First Name" required/>
-        <label for="inputLast" class="sr-only">Last Name</label>
-        <input type="text" id="inputLast" class="form-control" placeholder="Last Name" required/>
-        <label for="inputEmail" class="sr-only">Email Address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email Address" required/>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required/>
-        <label for="inputConfirmPassword" class="sr-only">Confirm Password</label>
-        <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Confirm Password" required/>
- 
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
-      </form>
-      </body>
->>>>>>> 54184ce867e4137d3f395da594b6e2b5d29496b2
 
   onSubmit(e) {
-    e.preventDefault();
+    e.preventDefault()
+    this.setState({ fireRedirect: true })
     const newUser = {
       firstname: this.state.firstname,
       lastname: this.state.lastname,
       email: this.state.email,
       password: this.state.password,
-      password2: this.state.password2
+      password2: this.state.password2,
     };
 
     axios
       .post("/routes/users/register", newUser)
-      .then(res => console.log(res.data))
+      .then((res => console.log(res.data)))
       .catch(err => this.setState({ errors: err.response.data }));
+
   }
 
   render() {
+    const { from } = this.props.location.state || '/Register'
+    const { fireRedirect } = this.state
+
     return (
       <div>
         <body className="text-center">
@@ -123,6 +109,9 @@ class Register extends Component {
             />
             <button className="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
           </form>
+          {fireRedirect && (
+            <Redirect to={from || '/Login'} />
+          )}
         </body>
       </div>
     );

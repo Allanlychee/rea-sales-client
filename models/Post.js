@@ -9,7 +9,7 @@ const PostSchema = new Schema({
   },
   text: {
     type: String,
-    reqeuired: true
+    required: true
   },
   name: {
     Type: String
