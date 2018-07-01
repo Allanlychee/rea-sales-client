@@ -4,7 +4,10 @@ import axios from "axios";
 import Login from '../Login/Login'
 
 class Register extends Component {
+<<<<<<< HEAD
   HEAD
+=======
+>>>>>>> b34104f6b25b818e1734308352b86dc668d4a168
   constructor() {
 
     super();

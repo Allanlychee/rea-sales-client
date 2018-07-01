@@ -1,5 +1,5 @@
 var Router = require('express').Router()
-var db = require('../models')
+var db = require('../models/usermodel')
 
 Router.get('/users', function (req, res) {
   db.User.find({})
