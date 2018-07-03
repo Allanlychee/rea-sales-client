@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from "react";
+import './Navbar.css'
 
 export default class NavBar extends Component {
   render() {
@@ -7,7 +8,7 @@ export default class NavBar extends Component {
         <div className="container">
           <Fragment>
             <a className="navbar-brand" href='/'>
-              Home
+              <img className="customlogo" src="https://cdn1.brivityidx.com/assets/images/uploads/1576/arevalohome_transparentlogo.png" />
           </a>
           </Fragment>
           <button

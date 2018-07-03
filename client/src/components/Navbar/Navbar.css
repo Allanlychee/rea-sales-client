@@ -1,6 +1,15 @@
 .brand-logo, .homeDefault {
     align-content: center;
   }
+
+ .customlogo {
+    height: 76px;
+    width: 300px;
+    border-radius: 0px; 
+    border: 0px none rgb(52, 52, 52); 
+    outline: none; 
+    cursor: inherit;
+ } 
 /* 
   .statusMessage {
     position: absolute;

@@ -7,9 +7,9 @@ import { Col, Row, Container } from "../../../../Grid";
 import { List, ListItem } from "../../../../List";
 import { Input, TextArea, FormBtn } from "../../../../Form";
 import Modal from "../../../../Modal";
-import Map from "../../../../Map";
-import Moment from 'react-moment';
-Moment.globalFormat = 'MMM D YYYY HH:mm';
+import MyMapComponent from "../../../../Map";
+
+
 
 class AdminAddHome extends Component {
   state = {
@@ -63,14 +63,14 @@ class AdminAddHome extends Component {
     }
   };
 
+
+
   render() {
     return (
       <Container fluid>
         <Row>
           <Col size="md-6 sm-12">
-            <Modal
-
-            >
+            <Modal>
               <form>
                 <Input
                   value={this.state.address}
@@ -132,10 +132,12 @@ class AdminAddHome extends Component {
                   <ListItem key={Home._id}>
                     <Link to={"/Admin/addhome/" + Home._id}>
                       <strong>
-                        Address: <Moment unix>{Home.date}</Moment> {Home.address} {Home.city}, {Home.state} {Home.zip}
-                        <br/>
-                        Price: {Home.price} 
-                        <br/>
+                        Date Posted: {Home.date}
+                        <br />
+                        Address: {Home.address} {Home.city}, {Home.state} {Home.zip}
+                        <br />
+                        Price: {Home.price}
+                        <br />
                         Description: {Home.description}
                       </strong>
                     </Link>
@@ -144,18 +146,19 @@ class AdminAddHome extends Component {
                 ))}
               </List>
             ) : (
-                <h3 class="text-center">No Results to Display</h3>
+                <h3 className="text-center">No Results to Display</h3>
               )}
             <FormBtn
-             className="btn btn-dark"
-            data-toggle="modal"
-            data-target="#addHomeModal"
-             >
-             Add a Home
+              className="btn btn-dark"
+              data-toggle="modal"
+              data-target="#addHomeModal"
+            >
+              Add a Home
               </FormBtn>
           </Col>
           <Col size="md-6 sm-12">
-              <Map />
+           
+          <MyMapComponent/>
           </Col>
         </Row>
       </Container>

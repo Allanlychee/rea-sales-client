@@ -10,6 +10,7 @@ import AdminAddHome from "./Profile/Admin/Pages/adminAddSeller/addSeller";
 import Admin from "./Profile/Admin/Pages/adminHome/admin"
 import viewMatch from "./Profile//Admin/Pages/adminViewOrMatch/ViewOrMatch"
 import viewSellers from "./Profile/Admin/Pages/adminViewSellers/viewSellers"
+import Detail from "./Profile/Admin/Pages/adminAddSellerDetail/Detail"
 
 import BuyerReg from "./Profile/HomeBuyerProf/buyerReg"
 import Buyer from "./Profile/HomeBuyerProf/buyer"
@@ -38,6 +39,7 @@ class AppRouter extends Component {
 
           <Route exact path='/admin' component={Admin} />
           <Route exact path='/admin/addHome' component={AdminAddHome} />
+          <Route exact path="/admin/addHome/:id" component={Detail} />
           <Route exact path='/admin/View-Match' component={viewMatch} />
           <Route exact path='/admin/View-Sellers' component={viewSellers} />
 
