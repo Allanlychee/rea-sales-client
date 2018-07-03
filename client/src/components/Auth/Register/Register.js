@@ -48,7 +48,7 @@ class Register extends Component {
  <h1>REGISTER <br /> </h1>  
   
           <form className="form-signin" onSubmit={this.onSubmit}>
-            <h1 className="h3 mb-3 font-weight-normal"> Please register </h1>
+        
             <label htmlFor="inputFirst" className="sr-only">First Name</label>
             <input
               type="text"
