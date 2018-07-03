@@ -23,6 +23,10 @@ var addHomeSchema = new Schema({
     type: String,
     default: "92000"
   },
+  formatted_Addr: {
+    type: String,
+    default: "123 Main Street Los Angeles, CA 92000"
+  },
   price: {
     type: String,
     default: "$9,000"

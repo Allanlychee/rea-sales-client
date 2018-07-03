@@ -18,6 +18,7 @@ class AdminAddHome extends Component {
     city: "",
     state: "",
     zip: "",
+    formatted_Addr: "",
     price: "",
     description: ""
   };
@@ -29,7 +30,7 @@ class AdminAddHome extends Component {
   loadHomes = () => {
     API.getHomes()
       .then(res =>
-        this.setState({ homes: res.data, address: "", city: "", state: "", zip: "", price: "", description: "" })
+        this.setState({ homes: res.data, address: "", city: "", state: "", zip: "", formatted_Addr: "", price: "", description: "" })
       )
       .catch(err => console.log(err));
   };
@@ -55,6 +56,7 @@ class AdminAddHome extends Component {
         city: this.state.city,
         state: this.state.state,
         zip: this.state.zip,
+        formatted_Addr: this.state.address + " " + this.state.city + ", " + this.state.state + " " + this.state.zip,
         price: this.state.price,
         description: this.state.description
       })
