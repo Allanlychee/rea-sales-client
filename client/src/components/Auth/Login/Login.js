@@ -4,9 +4,16 @@ import './Login.css'
 class Login extends Component {
   render() {
     return (
-      <body class="text-center">
+      // <body class="text-center">
+<div id="login">
+           
+   <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+ 
+<article>
+
+<h1>USER LOGIN <br /> </h1>
       <form class="form-signin">
-        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+        
         <label for="inputEmail" class="sr-only">Email address</label>
         <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus/>
         <label for="inputPassword" class="sr-only">Password</label>
@@ -18,8 +25,13 @@ class Login extends Component {
         </div>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
       </form>
-      </body>
-
+      
+</article>
+{/* <!--  Video is muted & autoplays, placed after major DOM elements for performance & has an image fallback  --> */}
+<video  autoplay="true" loop id="video-background" muted plays-inline>
+  <source src="https://static.videezy.com/system/resources/previews/000/007/790/original/4K_UHD_Drone_Bellingham_Washington_Neighborhood_Reavealing__Fernando.mp4" type="video/mp4" />
+</video>
+</div>
     );
   }
 }
