@@ -21,6 +21,10 @@ var usermodel = new Schema({
     type: String,
     default: "AAbb1122!!"
   },
+  userType: {
+    type: String,
+    required: true
+  },
   date: {
     type: Date,
     default: Date.now

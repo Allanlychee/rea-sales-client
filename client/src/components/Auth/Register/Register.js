@@ -4,10 +4,6 @@ import axios from "axios";
 import Login from '../Login/Login'
 
 class Register extends Component {
-<<<<<<< HEAD
-  HEAD
-=======
->>>>>>> b34104f6b25b818e1734308352b86dc668d4a168
   constructor() {
 
     super();
@@ -19,6 +15,8 @@ class Register extends Component {
       password: "",
       password2: "",
       errors: {},
+      userType: ""
+
     };
 
     this.onChange = this.onChange.bind(this);
@@ -38,8 +36,9 @@ class Register extends Component {
       email: this.state.email,
       password: this.state.password,
       password2: this.state.password2,
+      userType: this.state.userType
     };
-
+    console.log(newUser)
     axios
       .post("/routes/users/register", newUser)
       .then((res => console.log(res.data)))
@@ -55,7 +54,9 @@ class Register extends Component {
       <div>
         <body className="text-center">
           <form className="form-signin" onSubmit={this.onSubmit}>
+
             <h1 className="h3 mb-3 font-weight-normal"> Please register </h1>
+
             <label htmlFor="inputFirst" className="sr-only">First Name</label>
             <input
               type="text"
@@ -110,6 +111,21 @@ class Register extends Component {
               onChange={this.onChange}
               required
             />
+
+            <select
+              name="userType"
+              type="userType"
+              className="form-control"
+              value={this.state.userType}
+              onChange={this.onChange}
+              required>
+              <option value="1">userType</option>
+              <option value="Buyer">Buyer</option>
+              <option value="Seller">Seller</option>
+              <option value="Representative">Representative</option>
+              <option value="Admin">Admin</option>
+            </select>
+
             <button className="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
           </form>
           {fireRedirect && (

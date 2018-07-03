@@ -5,17 +5,18 @@
   "proxy": "http://localhost:3001/",
   "dependencies": {
     "axios": "^0.18.0",
+    "jwt-decode": "^2.2.0",
+    "prop-types": "^15.6.2",
     "react": "^16.0.0",
     "react-crud-table": "0.0.7",
     "react-dom": "^16.0.0",
-<<<<<<< HEAD
-    "react-router": "^3.2.1",
-=======
     "react-moment": "^0.7.7",
+    "react-redux": "^5.0.7",
     "react-router": "^4.3.1",
->>>>>>> b34104f6b25b818e1734308352b86dc668d4a168
     "react-router-dom": "^4.3.1",
-    "react-scripts": "^1.1.4"
+    "react-scripts": "^1.1.4",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",

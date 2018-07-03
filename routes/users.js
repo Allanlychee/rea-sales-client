@@ -44,7 +44,8 @@ router.post("/register", (req, res) => {
         firstname: req.body.firstname,
         lastname: req.body.lastname,
         email: req.body.email,
-        password: req.body.password
+        password: req.body.password,
+        userType: req.body.userType
       });
 
       // after user is created, we need to hash the password using bcrypt.
@@ -91,6 +92,7 @@ router.post("/login", (req, res) => {
       return res.status(404).json(errors);
     }
 
+
     // Check Password
     //"password is the password that was submitted in the form"..."user.password is the hashed password"
     bcrypt.compare(password, user.password).then(isMatch => {
@@ -101,7 +103,8 @@ router.post("/login", (req, res) => {
         const payload = {
           id: user.id,
           firstname: user.firstname,
-          lastname: user.lastname
+          lastname: user.lastname,
+          userType: user.userType
         }; //create JWT payload
 
         // Sign Token
@@ -111,6 +114,7 @@ router.post("/login", (req, res) => {
           { expiresIn: 3600000 },
           (err, token) => {
             res.json({
+              payload: payload,
               success: true,
               token: "Bearer " + token
             });
