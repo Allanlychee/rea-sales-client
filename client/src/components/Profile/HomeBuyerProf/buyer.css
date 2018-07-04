@@ -19,16 +19,12 @@ body {
     background-image: url('http://alternativealexandriawaterfrontplan.com/wp-content/uploads/unique-beautiful-houses-home-garden-homes-design_294901.jpg')
 }
 
-.boldfont {
-    font-family: geomed;
-}
-
 .empty-space {
     height: 15px;
 }
 
 .container {
-    background-color: rgba(186,206,230, 0.8);
+    background-color: rgba(186, 206, 230, 0.897);
     margin-top: 10%;
 }
 
@@ -52,8 +48,8 @@ body {
     margin-top: 10px;
     box-shadow: 5px 6px 15px -7px black;
     font-family: geolight;
-    font-size: 36px;
-    letter-spacing: 3px;
+    font-size: 22px;
+    letter-spacing: 1px;
     position: relative;
     border: 2px solid #343a40;
     padding: 0px 0px 30px 0px;
@@ -67,26 +63,14 @@ body {
     margin: 0 auto;
 }
 
-.criteria {
+.criteria, .sellermatches, .chat, .favorites {
     background-color: #90979f;
     color: #ffffff;
     margin: 15px;
     box-shadow: 5px 6px 15px -7px black;
     font-family: geolight;
-    font-size: 36px;
-    letter-spacing: 3px;
-    border: 2px solid #343a40;
-    padding: 20px 0px 30px 0px;
-}
-
-.sellermatches {
-    background-color: #90979f;
-    color: #ffffff;
-    margin: 15px;
-    box-shadow: 5px 6px 15px -7px black;
-    font-family: geolight;
-    font-size: 36px;
-    letter-spacing: 3px;
+    font-size: 22px;
+    letter-spacing: 1px;
     border: 2px solid #343a40;
     padding: 20px 0px 30px 0px;
 }
@@ -103,18 +87,6 @@ body {
     margin: 10px;
 }
 
-.chat {
-    background-color: #90979f;
-    color: #ffffff;
-    margin: 15px;
-    box-shadow: 5px 6px 15px -7px black;
-    font-family: geolight;
-    font-size: 36px;
-    letter-spacing: 3px;
-    border: 2px solid #343a40;
-    padding: 20px 0px 30px 0px;
-}
-
 .chatBox {
     height: 250px;
     width: 85%;
@@ -122,18 +94,6 @@ body {
     margin-top: 5%;
     margin-bottom: 5%;
     font: fff;
-}
-
-.favorites {
-    background-color: #90979f;
-    color: #ffffff;
-    margin: 15px;
-    box-shadow: 5px 6px 15px -7px black;
-    font-family: geolight;
-    font-size: 36px;
-    letter-spacing: 3px;
-    border: 2px solid #343a40;
-    padding: 20px 0px 30px 0px;
 }
 
 .buyer-fav-row {
@@ -146,6 +106,22 @@ body {
     border: 1px solid white;
     padding: 5px;
     margin: 10px;
+}
+
+.test-divs {
+    font: black;
+}
+
+.nav-link {
+    background-color: transparent;
+    color: black;
+    font-family: geolight;
+    font-size: 20px;
+}
+
+tab :onhover {
+    background-color: red;
+    font: red;
 }
 
 
