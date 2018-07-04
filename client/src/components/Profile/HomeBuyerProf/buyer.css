@@ -1,0 +1,151 @@
+/* Andrew's custom fonts imported */
+@font-face {
+    font-family: geolight;
+    src: url(../../../fonts/GEOMANISTLIGHT.OTF)
+  }
+  
+  @font-face {
+    font-family: geomed;
+    src: url(../../../fonts/GEOMANISTMEDIUM.OTF)
+  }
+  
+  @font-face {
+    font-family: gotham;
+    src: url(../../../fonts/GOTHAMPROMEDIUM.OTF)
+  }
+
+body {
+    background-color: #f3fdfe;
+    background-image: url('http://alternativealexandriawaterfrontplan.com/wp-content/uploads/unique-beautiful-houses-home-garden-homes-design_294901.jpg')
+}
+
+.boldfont {
+    font-family: geomed;
+}
+
+.empty-space {
+    height: 15px;
+}
+
+.container {
+    background-color: rgba(186,206,230, 0.8);
+    margin-top: 10%;
+}
+
+.image-div {
+    height: 50px;
+    width: 50%;
+    padding-left: 8%;
+}
+
+.img-circle {
+    border-radius: 400px;
+    height: 200px;
+    width: 200px;
+    border: 6px solid #343a40;
+}
+
+.profile-card {
+    background-color: #90979f;
+    color: #ffffff;
+    margin: 15px;
+    margin-top: 10px;
+    box-shadow: 5px 6px 15px -7px black;
+    font-family: geolight;
+    font-size: 36px;
+    letter-spacing: 3px;
+    position: relative;
+    border: 2px solid #343a40;
+    padding: 0px 0px 30px 0px;
+}
+
+.image-container {
+    height: 200px;
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    margin: 0 auto;
+}
+
+.criteria {
+    background-color: #90979f;
+    color: #ffffff;
+    margin: 15px;
+    box-shadow: 5px 6px 15px -7px black;
+    font-family: geolight;
+    font-size: 36px;
+    letter-spacing: 3px;
+    border: 2px solid #343a40;
+    padding: 20px 0px 30px 0px;
+}
+
+.sellermatches {
+    background-color: #90979f;
+    color: #ffffff;
+    margin: 15px;
+    box-shadow: 5px 6px 15px -7px black;
+    font-family: geolight;
+    font-size: 36px;
+    letter-spacing: 3px;
+    border: 2px solid #343a40;
+    padding: 20px 0px 30px 0px;
+}
+
+.card-row {
+    margin-left: 10%;
+}
+
+.seller-match-cards {
+    height: 150px;
+    background-color: #343a40;
+    border: 1px solid white;
+    padding: 5px;
+    margin: 10px;
+}
+
+.chat {
+    background-color: #90979f;
+    color: #ffffff;
+    margin: 15px;
+    box-shadow: 5px 6px 15px -7px black;
+    font-family: geolight;
+    font-size: 36px;
+    letter-spacing: 3px;
+    border: 2px solid #343a40;
+    padding: 20px 0px 30px 0px;
+}
+
+.chatBox {
+    height: 250px;
+    width: 85%;
+    background-color: #343a40;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font: fff;
+}
+
+.favorites {
+    background-color: #90979f;
+    color: #ffffff;
+    margin: 15px;
+    box-shadow: 5px 6px 15px -7px black;
+    font-family: geolight;
+    font-size: 36px;
+    letter-spacing: 3px;
+    border: 2px solid #343a40;
+    padding: 20px 0px 30px 0px;
+}
+
+.buyer-fav-row {
+    margin-left: 10%;
+}
+
+.buyer-fav-cards {
+    height: 200px;
+    background-color: #343a40;
+    border: 1px solid white;
+    padding: 5px;
+    margin: 10px;
+}
+
+

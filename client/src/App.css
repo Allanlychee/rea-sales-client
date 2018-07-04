@@ -1,3 +1,19 @@
+/* Andrew's custom fonts imported */
+@font-face {
+  font-family: geolight;
+  src: url(fonts/GEOMANISTLIGHT.OTF)
+}
+
+@font-face {
+  font-family: geomed;
+  src: url(fonts/GEOMANISTMEDIUM.OTF)
+}
+
+@font-face {
+  font-family: gotham;
+  src: url(fonts/GOTHAMPROMEDIUM.OTF)
+}
+
 img {
     width: 100%;
   }
@@ -10,7 +26,7 @@ img {
     height: 86.7vh;
     margin-top: -24px;
     margin-bottom: -50px;
-    overflow:hidden;
+    overflow:auto;
   }
   .landing {
     position: relative;
@@ -20,7 +36,8 @@ img {
     height: 86.7vh;
     margin-top: -24px;
     margin-bottom: -50px;
-    overflow:hidden;
+    overflow:auto;
+    /* background-color: white; */
   }
   
   .landing-inner {

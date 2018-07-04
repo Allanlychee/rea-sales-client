@@ -4,9 +4,9 @@ export default class NavBar extends Component {
   render() {
     return (
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
-        <div className="container">
+        <div className="">
           <Fragment>
-            <a className="navbar-brand" href='/'>
+            <a className="navbar-brand float-left" href='/'>
               Home
           </a>
           </Fragment>
