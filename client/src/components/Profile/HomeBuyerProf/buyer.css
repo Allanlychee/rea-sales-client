@@ -16,7 +16,9 @@
 
 .buyerBody {
     background-color: #f3fdfe;
-    background-image: url('http://alternativealexandriawaterfrontplan.com/wp-content/uploads/unique-beautiful-houses-home-garden-homes-design_294901.jpg');
+    /* background-image: url('http://alternativealexandriawaterfrontplan.com/wp-content/uploads/unique-beautiful-houses-home-garden-homes-design_294901.jpg'); */
+    background: url('http://alternativealexandriawaterfrontplan.com/wp-content/uploads/unique-beautiful-houses-home-garden-homes-design_294901.jpg');
+    
 }
 
 .empty-space {

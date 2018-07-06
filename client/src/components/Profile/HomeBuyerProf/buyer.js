@@ -96,7 +96,7 @@ class Buyer extends Component {
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#sellermatches">
-                                    Seller Matches
+                                    Matches
                 </a>
                             </li>
                             <li class="nav-item">
@@ -167,10 +167,6 @@ class Buyer extends Component {
                                             <div className="col-sm-5 seller-match-cards" />
                                             <div className="col-sm-5 seller-match-cards" />
                                         </div>
-                                        <div className="row card-row">
-                                            <div className="col-sm-5 seller-match-cards" />
-                                            <div className="col-sm-5 seller-match-cards" />
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="tab-pane fade test-divs" id="chat">
@@ -188,10 +184,6 @@ class Buyer extends Component {
                                         <div className="row">
                                             <div className="col-sm-12">
                                             </div>
-                                        </div>
-                                        <div className="row buyer-fav-row">
-                                            <div className="col-sm-5 buyer-fav-cards" />
-                                            <div className="col-sm-5 buyer-fav-cards" />
                                         </div>
                                         <div className="row buyer-fav-row">
                                             <div className="col-sm-5 buyer-fav-cards" />
