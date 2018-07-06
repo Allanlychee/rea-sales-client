@@ -9,7 +9,9 @@ class Admin extends Component {
             <div className="container">
               <div className="row">
                 <div className="col-md-12 text-center">
-                  <h1 className="display-3 mb-4">ADMIN PAGE</h1>
+                  <h1 className="display-3 mb-4 homeTitle">ADMIN PAGE</h1>
+                <hr/>
+                <br/>
                   <p className="lead">
                     {" "}
                     Text Here
@@ -19,19 +21,16 @@ class Admin extends Component {
                     View/Match Buyers & Sellers</a>
                   <br />
                   <br />
-                  <a className="btn btn-lg btn-light mr-2" href="#">
-                  Add Home Buyer <br />
-                    (?? or only from registed Buyers)</a>
-                  <a className="btn btn-lg btn-light mr-2" href="/Admin/addhome">
+                  <a className="btn btn-lg btn-light" href="/Admin/addhome">
                     Add Home Seller <br />
                     (Leads from Cold Calling)</a>
                   <br />
                   <br />
-                  <a className="btn btn-lg btn-light mr-2" href="#">
+                  <a className="btn btn-lg btn-light" href="#">
                     View Matches</a>
                   <br />
                   <br />
-                  <a className="btn btn-lg btn-light mr-2" href="/Admin/View-Sellers">
+                  <a className="btn btn-lg btn-light" href="/Admin/View-Sellers">
                     View Sellers</a>
                   <br />
                   <br />

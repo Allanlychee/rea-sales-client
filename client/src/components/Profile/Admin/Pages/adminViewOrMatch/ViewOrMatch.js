@@ -1,50 +1,34 @@
 import React, { Component } from "react";
+import './ViewOrMatch.css'
 
 class viewMatch extends Component {
-  render() {
-    return (
-        <div>
-        <div className="landing">
-          <div className="dark-overlay landing-inner text-light">
-            <div className="container">
-              <div className="row">
-                <div className="col-md-12 text-center">
-                  <h1 className="display-3 mb-4">View or Match Clients</h1>
-                  <p className="lead">
-                    {" "}
-                    Text Here
-                </p>
-                  <hr />
-                
-
-
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <div className="dropdown">
-                    <a className="btn btn-secondary dropdown-toggle" href="/" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Page Views (For Devs Only)
-                     </a>
-                    <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <a className="dropdown-item" href="/Admin">Admin Page</a>
-                      <a className="dropdown-item" href="/Representative">Representative Page</a>
-                      <a className="dropdown-item" href="/Buyer">Buyer Page</a>
-                      <a className="dropdown-item" href="/Seller">Seller Page</a>
-                    </div>
-                  </div>
-                </div>
+    render() {
+      return (
+        <div id="seller">
+            <h1>Matchmaking<br /> </h1>
+          {/* <!--  Content  --> */}
+         
+  
+            <span>
+              {/* USER PROFILE FROM MONGODB GOES IN THIS CONTAINER*/}
+              <div className="profile-container">
+                <h2>Homeowners</h2>
               </div>
-            </div>
-          </div>
+  
+              {/* MATCHING BUYERS GO IN THIS CONTAINER*/}
+              <div className="buyermatch-container">
+                <h2>Buyers</h2>
+              </div>
+            </span>
+       
+  
+          {/* <!--  Video is muted & autoplays, placed after major DOM elements for performance & has an image fallback  --> */}
+          <video autoplay="true" loop id="video-background" muted plays-inline>
+            <source src="https://static.videezy.com/system/resources/previews/000/007/790/original/4K_UHD_Drone_Bellingham_Washington_Neighborhood_Reavealing__Fernando.mp4" type="video/mp4" />
+          </video>
         </div>
-
-
-      </div>
-  )
+      )
+    }
   }
-  }
-
+  
   export default viewMatch;
