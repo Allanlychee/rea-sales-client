@@ -4,6 +4,17 @@ import "./buyer.css";
 
 class Buyer extends Component {
   render() {
+
+    // var header = document.getElementByClassName("nav-tabs");
+    // var btns = header.getElementsByClassName("tab-pane");
+    // for (var i = 0; i < btns.length; i++) {
+    //   btns[i].addEventListener("click", function() {
+    //     var current = document.getElementsByClassName("active");
+    //     current[0].className = current[0].className.replace(" active", "");
+    //     this.className += " active";
+    //   });
+    // }
+
     return (
       <div>
         <link
@@ -77,7 +88,7 @@ class Buyer extends Component {
           {/* tabs start */}
             <ul class="nav nav-tabs justify-content-center">
               <li class="nav-item">
-                <a class="nav-link active" data-toggle="tab" href="#criteria">
+                <a class="nav-link" data-toggle="tab" href="#criteria">
                   Criteria
                 </a>
               </li>
@@ -100,10 +111,9 @@ class Buyer extends Component {
           <div>
 
             <div class="tab-content">
-              <div class="tab-pane active test-divs" id="criteria">
+              <div class="tab-pane test-divs" id="criteria">
                 <div className="row criteria">
                   <div className="col-sm-12">
-                    <h1 className="text-center">Criteria</h1>
                     <p>
                       <h5>
                         Price: <span>$465,000</span>
@@ -141,7 +151,6 @@ class Buyer extends Component {
                 <div className="sellermatches">
                   <div className="row">
                     <div className="col-sm-12">
-                      <h1 className="text-center">Seller Matches</h1>
                     </div>
                   </div>
                   <div className="row card-row">
@@ -165,7 +174,6 @@ class Buyer extends Component {
               <div class="tab-pane fade test-divs" id="chat">
                 <div className="row chat">
                   <div align="center" className="col-sm-12">
-                    <h1 className="text-center">Chat</h1>
                     <div className="chatBox">
                       <p>Hello</p>
                       <p>Hi there!</p>
@@ -177,7 +185,6 @@ class Buyer extends Component {
                 <div className="favorites">
                   <div className="row">
                     <div className="col-sm-12">
-                      <h1 className="text-center">Favorites</h1>
                     </div>
                   </div>
                   <div className="row buyer-fav-row">

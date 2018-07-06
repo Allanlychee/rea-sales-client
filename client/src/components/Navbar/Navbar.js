@@ -3,8 +3,8 @@ import React, { Component, Fragment } from "react";
 export default class NavBar extends Component {
   render() {
     return (
-      <nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
-        <div className="">
+      <nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-4 justify-content-between">
+        <div className="nav-wrapper">
           <Fragment>
             <a className="navbar-brand float-left" href='/'>
               Home
@@ -28,7 +28,9 @@ export default class NavBar extends Component {
               </li>
             </ul> */}
 
-            <ul className="navbar-nav ml-auto">
+          </div>
+        </div>
+            <ul className="navbar-nav d-flex justify-content-end">
               <li className="nav-item">
                 <a className="nav-link" href="/Register">
                   Register
@@ -40,8 +42,6 @@ export default class NavBar extends Component {
                 </a>
               </li>
             </ul>
-          </div>
-        </div>
       </nav>
     );
   }
