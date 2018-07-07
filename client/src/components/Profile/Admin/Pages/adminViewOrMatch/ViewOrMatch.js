@@ -89,7 +89,7 @@ class viewMatch extends Component {
             </div>
 
             <div className="col-m2">
-              <div className="btn btn-primary matchBTN">Match
+              <div className="btn btn-danger matchBTN">Match
               </div>
             </div>
             <div className="col-m5">

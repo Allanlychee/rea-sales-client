@@ -185,7 +185,7 @@ class AdminAddHome extends Component {
                 <h3 className="text-center">No Results to Display</h3>
               )}
             <FormBtn
-              className="btn btn-dark"
+              className="btn btn-danger"
               data-toggle="modal"
               data-target="#addHomeModal"
             >
