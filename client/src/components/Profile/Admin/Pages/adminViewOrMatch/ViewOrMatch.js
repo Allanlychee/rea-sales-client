@@ -13,7 +13,14 @@ class viewMatch extends Component {
     zip: "",
     formatted_Addr: "",
     price: "",
-    description: ""
+    description: "",
+    active: false
+   
+  };
+
+
+  handleClick = () => {
+    this.setState({ active: true });
   };
 
   componentDidMount() {
@@ -27,7 +34,10 @@ class viewMatch extends Component {
       )
       .catch(err => console.log(err));
   };
+  
+
   render() {
+   
     return (
       <div id="viewMatch">
         <div className="landing">
@@ -66,7 +76,10 @@ class viewMatch extends Component {
 
                       {this.state.homes.map(Home => (
                         <a>
-                          <button className="homeListItems btn btn-dark">
+                          <button className= {"homeListItems btn btn-dark yourBTN"+ " " + `${this.state.active}`}
+                           variant="raised"
+                           onClick={this.handleClick}
+                          >
                             <li key={Home._id}>
                               Name: {Home.name}
                               <br />
@@ -97,8 +110,23 @@ class viewMatch extends Component {
               <div className=" buyer-box">
                 <h2 className="viewMatchHeaders">Buyers</h2>
                 <ul>
-                  <button className="buyer-match btn btn-dark">
+                  <button className="buyer-match btn btn-dark yourBTN"
+                   onClick={this.handleClick}>
                     <li>Name:  Gal Gadot
+                        <br />
+                      Income Range:  $450,000+
+                        <br />
+                      Letter of Approval:  Yes
+                        <br />
+                      Financing Completd:  Yes
+                        <br />
+                      Amount Financed:  $5,500,000
+                        <hr />
+                    </li>
+                  </button>
+                  <button className="buyer-match btn btn-dark yourBTN"
+                   onClick={this.handleClick}>
+                    <li>Name:  Andy
                         <br />
                       Income Range:  $150,000+
                         <br />
@@ -106,24 +134,12 @@ class viewMatch extends Component {
                         <br />
                       Financing Completd:  Yes
                         <br />
-                      Amount Financed:  $20,000,000
+                      Amount Financed:  $1,250,000
                         <hr />
                     </li>
                   </button>
-                  <button className="buyer-match btn btn-dark">
-                    <li>Name:  Mark Zuckerberg
-                        <br />
-                      Income Range:  $550,000+
-                        <br />
-                      Letter of Approval:  Yes
-                        <br />
-                      Financing Completd:  Yes
-                        <br />
-                      Amount Financed:  $20,000,000
-                        <hr />
-                    </li>
-                  </button>
-                  <button className="buyer-match btn btn-dark">
+                  <button className="buyer-match btn btn-dark yourBTN"
+                   onClick={this.handleClick}>
                     <li>Name:  Sara Croft
                         <br />
                       Income Range:  $750,000+
@@ -132,7 +148,7 @@ class viewMatch extends Component {
                         <br />
                       Financing Completd:  Yes
                         <br />
-                      Amount Financed:  $50,000,000
+                      Amount Financed:  $20,000,000
                         <hr />
                     </li>
                   </button>
