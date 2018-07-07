@@ -8,16 +8,17 @@ class Home extends Component {
           <div className="container">
             <div className="row">
               <div className="col-md-12 text-center">
-                <h1 className="display-3 mb-4">ARIES AND FRIENDS</h1>
+                <h1 className="display-3 mb-4 homeTitle">Arevalo Home Partnership</h1>
+                <hr />
+                <br/>
                 <p className="lead">
-                  {" "}
                   More than just a connection. It's a relationship.
                 </p>
                 <hr />
-                <a className="btn btn-lg btn-info mr-2" href="/Register">
+                <a className="btn btn-lg btn-info mr-2 registerBTN" href="/Register">
                   Sign Up
                 </a>
-                <a className="btn btn-lg btn-light" href="/Login">
+                <a className="btn btn-lg btn-light loginBTN" href="/Login">
                   Login
                 </a>
                 <hr />

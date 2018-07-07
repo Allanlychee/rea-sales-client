@@ -1,1 +1,1 @@
-export { default } from "./2addSeller";
+export { default } from "./addSeller";

@@ -7,6 +7,10 @@ var addHomeSchema = new Schema({
     type: Date,
     default: Date.now
   },
+  name: {
+    type: String,
+    default: "Big Bird"
+  },
   address: {
     type: String,
     default: "123 Main Street"
@@ -22,6 +26,10 @@ var addHomeSchema = new Schema({
   zip: {
     type: String,
     default: "92000"
+  },
+  formatted_Addr: {
+    type: String,
+    default: "123 Main Street Los Angeles, CA 92000"
   },
   price: {
     type: String,

@@ -3,6 +3,7 @@
   }
 
  .customlogo {
+   position: relative;
     height: 76px;
     width: 300px;
     border-radius: 0px; 

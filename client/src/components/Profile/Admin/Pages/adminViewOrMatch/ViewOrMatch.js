@@ -1,50 +1,116 @@
 import React, { Component } from "react";
+import './ViewOrMatch.css'
+import '../adminHome/admin.css'
+import API from "../../../Admin/Utils/adminAddSeller/API"
+import { List, ListItem } from "../../../../List";
+import { Link } from "react-router-dom";
 
 class viewMatch extends Component {
+  state = {
+    homes: [],
+    name: "",
+    address: "",
+    city: "",
+    state: "",
+    zip: "",
+    formatted_Addr: "",
+    price: "",
+    description: ""
+  };
+
+  componentDidMount() {
+    this.loadHomes();
+  }
+
+  loadHomes = () => {
+    API.getHomes()
+      .then(res =>
+        this.setState({ homes: res.data, name: "", address: "", city: "", state: "", zip: "", formatted_Addr: "", price: "", description: "" })
+      )
+      .catch(err => console.log(err));
+  };
   render() {
     return (
-        <div>
+      <div id="viewMatch">
         <div className="landing">
-          <div className="dark-overlay landing-inner text-light">
-            <div className="container">
-              <div className="row">
-                <div className="col-md-12 text-center">
-                  <h1 className="display-3 mb-4">View or Match Clients</h1>
-                  <p className="lead">
-                    {" "}
-                    Text Here
-                </p>
-                  <hr />
-                
+          <div className="landing-inner">
+            <ul className="nav nav-tabs nav-fill adminNav">
+              <li className="nav-item">
+                <a className="nav-link adminNavlink" href="/Admin">Home</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link adminNavlink" href="/Admin/View-Match">Match Clients</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link adminNavlink" href="/Admin/addhome">Homes for Sale</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link adminNavlink" href="#">View Buyers</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link adminNavlink" href="#">View Closed Deals</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <h1>Matchmaking<br /> </h1>
+        <div className="viewMatchContainer">
+          <div className="row">
+            <div className="col-m5">
+              {/* <!--  Content  --> */}
+              {/* USER PROFILE FROM MONGODB GOES IN THIS CONTAINER*/}
 
+              <div className="profile-box">
+                <h2 className="viewMatchHeaders">Homeowners</h2>
+                <span className="homeList">
+                  {this.state.homes.length ? (
+                    <ul>
 
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <div className="dropdown">
-                    <a className="btn btn-secondary dropdown-toggle" href="/" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Page Views (For Devs Only)
-                     </a>
-                    <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <a className="dropdown-item" href="/Admin">Admin Page</a>
-                      <a className="dropdown-item" href="/Representative">Representative Page</a>
-                      <a className="dropdown-item" href="/Buyer">Buyer Page</a>
-                      <a className="dropdown-item" href="/Seller">Seller Page</a>
-                    </div>
-                  </div>
-                </div>
+                      {this.state.homes.map(Home => (
+                        <a>
+                            <button className="homeListItems btn btn-dark">
+                          <li key={Home._id}>
+                              Name: {Home.name}
+                              <br />
+                              Address: {Home.address} {Home.city}, {Home.state} {Home.zip}
+                              <br />
+                              Price: {Home.price}
+                              <br />
+                              Description: {Home.description}
+                            <hr />
+                          </li>
+                            </button>
+                        </a>
+                      ))}
+                    </ul>
+                  ) : (
+                      <h3 className="text-center">No Results to Display</h3>
+                    )}
+                </span>
+              </div>
+            </div>
+
+            <div className="col-m2">
+              <div className="btn btn-primary matchBTN">Match
+              </div>
+            </div>
+            <div className="col-m5">
+              {/* MATCHING BUYERS GO IN THIS CONTAINER*/}
+              <div className=" buyer-box">
+                <h2 className="viewMatchHeaders">Buyers</h2>
               </div>
             </div>
           </div>
         </div>
 
 
-      </div>
-  )
+        {/* <!--  Video is muted & autoplays, placed after major DOM elements for performance & has an image fallback  --> */}
+        <video autoplay="true" loop id="video-background" muted plays-inline>
+          <source src="https://static.videezy.com/system/resources/previews/000/007/790/original/4K_UHD_Drone_Bellingham_Washington_Neighborhood_Reavealing__Fernando.mp4" type="video/mp4" />
+        </video>
+      </div >
+    )
   }
-  }
+}
 
-  export default viewMatch;
+export default viewMatch;

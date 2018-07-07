@@ -6,11 +6,7 @@ class viewSellers extends Component {
     return (
         <div>
     <main role="main">
-      <section class="jumbotron text-center">
-        <div class="container">
-          <h1 class="jumbotron-heading">Seller example</h1>
-        </div>
-      </section>
+      
 
       <div class="album py-5 bg-light">
         <div class="container">

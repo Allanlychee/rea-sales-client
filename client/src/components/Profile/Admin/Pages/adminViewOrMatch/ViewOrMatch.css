@@ -1,0 +1,61 @@
+#viewMatch {
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* The only rule that matters */
+#video-background {
+    /*  making the video fullscreen  */
+      position: fixed;
+      right: 0; 
+      bottom: 0;
+      min-width: 100%; 
+      min-height: 100%;
+      width: auto; 
+      height: auto;
+      z-index: -100;
+    }
+    
+.profile-box, .buyer-box {
+    color: white;
+    margin-left: 20px;
+    width:700px;
+    height: 650px;
+    font-size: 36px;
+ 
+    background-color:#373d42;
+    opacity: 0.9;
+    overflow: auto;
+}
+.profile-box{
+    margin-left:50px;
+}
+.viewMatchContainer {
+    position: absolute;
+    width:100%;
+    margin-top: -690px;
+}
+
+.matchBTN {
+    margin-top:90%;
+    margin-left:20px;
+    align-content: center;
+    width:100px;
+}
+
+.homeList{
+    color:black;
+    font-size: 16px;
+}
+
+.homeListItems{
+    width:600px;
+    color:white;
+
+}
+
+.viewMatchHeaders{
+text-align: center;
+margin-bottom:20px;
+}
