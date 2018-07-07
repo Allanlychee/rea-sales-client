@@ -1,9 +1,34 @@
 import React, { Component } from "react";
 import './ViewOrMatch.css'
 import '../adminHome/admin.css'
-import { Col, Row, Container } from "../../../../Grid";
+import API from "../../../Admin/Utils/adminAddSeller/API"
+import { List, ListItem } from "../../../../List";
+import { Link } from "react-router-dom";
 
 class viewMatch extends Component {
+  state = {
+    homes: [],
+    name: "",
+    address: "",
+    city: "",
+    state: "",
+    zip: "",
+    formatted_Addr: "",
+    price: "",
+    description: ""
+  };
+
+  componentDidMount() {
+    this.loadHomes();
+  }
+
+  loadHomes = () => {
+    API.getHomes()
+      .then(res =>
+        this.setState({ homes: res.data, name: "", address: "", city: "", state: "", zip: "", formatted_Addr: "", price: "", description: "" })
+      )
+      .catch(err => console.log(err));
+  };
   render() {
     return (
       <div id="viewMatch">
@@ -36,7 +61,33 @@ class viewMatch extends Component {
               {/* USER PROFILE FROM MONGODB GOES IN THIS CONTAINER*/}
 
               <div className="profile-box">
-                <h2>Homeowners</h2>
+                <h2 className="viewMatchHeaders">Homeowners</h2>
+                <span className="homeList">
+                {this.state.homes.length ? (
+              <ul>
+
+                {this.state.homes.map(Home => (
+                      <a>
+                  <li className="homeListItems" key={Home._id}>
+                    
+                        Name: {Home.name}
+                        <br/>
+                        Address: {Home.address} {Home.city}, {Home.state} {Home.zip}
+                        <br />
+                        Price: {Home.price}
+                        <br />
+                        Description: {Home.description}
+                      <hr/>
+                   
+                  
+                  </li>
+                      </a>
+                ))}
+              </ul>
+            ) : (
+                <h3 className="text-center">No Results to Display</h3>
+              )}
+              </span>
               </div>
             </div>
          
@@ -47,7 +98,7 @@ class viewMatch extends Component {
           <div className="col-m5">
             {/* MATCHING BUYERS GO IN THIS CONTAINER*/}
             <div className=" buyer-box">
-              <h2>Buyers</h2>
+              <h2 className="viewMatchHeaders">Buyers</h2>
             </div>
           </div>
         </div>
