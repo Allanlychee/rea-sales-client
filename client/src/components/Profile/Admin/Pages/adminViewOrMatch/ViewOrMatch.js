@@ -98,6 +98,15 @@ class viewMatch extends Component {
               {/* MATCHING BUYERS GO IN THIS CONTAINER*/}
               <div className=" buyer-box">
                 <h2 className="viewMatchHeaders">Buyers</h2>
+                   <button className="buyer-match">
+                    <ul>
+                      <li><p>Name:  Gal Gadot</p></li>
+                      <p>Income Range:  $150,000+</p>
+                      <p>Letter of Approval:  Yes</p>
+                      <p>Financing Completd:  Yes</p>
+                      <p>Amount Financed:  $20,000,000</p>
+                    </ul>
+                    </button>
               </div>
             </div>
           </div>
