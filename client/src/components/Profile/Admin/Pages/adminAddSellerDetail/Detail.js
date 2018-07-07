@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../../../../Grid";
 import Jumbotron from "../../../../Jumbotron/Jumbotron"
 import API from "../../Utils/adminAddSeller/API"
+import "./Detail.css"
 
 class Detail extends Component {
   state = {
@@ -22,7 +23,7 @@ class Detail extends Component {
         <Row>
           <Col size="md-12">
             <Jumbotron>
-              <h1>
+              <h1 id="DetailAddress">
                 {this.state.home.address} {this.state.home.city}, {this.state.home.state} {this.state.home.zip}
               </h1>
             </Jumbotron>
@@ -30,13 +31,14 @@ class Detail extends Component {
         </Row>
         <Row>
           <Col size="md-10 md-offset-1">
-            <article>
-              <h1>Description</h1>
+          
+              Description
               <p>
                 {this.state.home.description}
-                {this.state.home.image}
+                <br/>
+                {this.state.home.price}
               </p>
-            </article>
+            
           </Col>
         </Row>
         <Row>

@@ -21,17 +21,41 @@ var markers = []
 //         }
 //     );
 // }
-
+// Optionally the request above could also be done as
 
 class Map extends Component {
     state = {
         homes: []
     };
-
+    
     componentDidMount() {
-        this.loadHomes()   
+        this.loadHomes()  
     }
     
+    loadMap = () => {
+    axios.get('/api/admin/addHome')
+        .then(function (response) {
+    
+            for (var i = 0; i < response.data.length; i++) {
+    
+                Geocode.fromAddress(response.data[i].formatted_Addr).then(
+                    response => {
+                        const { lat, lng } = response.results[0].geometry.location;
+                        markers.push({ id: i += 2, lat: lat, lng: lng })
+                    },
+                    error => {
+                        console.error(error);
+                    }
+                );
+                console.log(response.data[i].formatted_Addr)
+            }   
+            console.log(markers);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+    }
+
     loadHomes = () => {
         API.getHomes()
         .then(res =>
@@ -41,29 +65,7 @@ class Map extends Component {
     };
     
     render() {
-        // Optionally the request above could also be done as
-        axios.get('/api/admin/addHome')
-            .then(function (response) {
-    
-                for (var i = 0; i < response.data.length; i++) {
-    
-                    Geocode.fromAddress(response.data[i].formatted_Addr).then(
-                        response => {
-                            const { lat, lng } = response.results[0].geometry.location;
-                            markers.push({ id: i += 2, lat: lat, lng: lng })
-                        },
-                        error => {
-                            console.error(error);
-                        }
-                    );
-                    console.log(response.data[i].formatted_Addr)
-                }   
-                console.log(markers);
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
-
+        this.loadMap() 
         return (
             <div>
                 <GoogleMap
@@ -88,7 +90,7 @@ const MyMapComponent = compose(
     withProps({
         googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBe4e-dSQ2ZNtQVt0rr2_E5z9amEQYquAA&v=3.exp&libraries=geometry,drawing,places",
         loadingElement: <div style={{ height: `100%` }} />,
-        containerElement: <div style={{ height: `645px` }} />,
+        containerElement: <div style={{ height: `720px` }} />,
         mapElement: <div style={{ height: `100%` }} />,
     }),
     withScriptjs,

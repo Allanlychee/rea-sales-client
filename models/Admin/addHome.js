@@ -7,6 +7,10 @@ var addHomeSchema = new Schema({
     type: Date,
     default: Date.now
   },
+  name: {
+    type: String,
+    default: "Big Bird"
+  },
   address: {
     type: String,
     default: "123 Main Street"
