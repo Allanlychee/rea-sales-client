@@ -22,3 +22,4 @@ SERVER-SIDE
     - Passport
     - Pasport-jst
     - Validator
+    - Redux
