@@ -1,11 +1,15 @@
 import React, { Component } from "react";
 import "./buyer.css";
+import axios from "axios";
 // import App from '../Tabs/index';
 
 class Buyer extends Component {
     componentDidMount() {
-       document.getElementById("criteriaTAB").click()
-      }
+        document.getElementById("criteriaTAB").click()
+    }
+
+
+
     render() {
         // var header = document.getElementByClassName("nav-tabs");
         // var btns = header.getElementsByClassName("tab-pane");
