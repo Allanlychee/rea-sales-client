@@ -81,3 +81,7 @@
     text-align: left;
     border: none;
 }
+
+::-webkit-scrollbar { 
+    display: none; 
+}
