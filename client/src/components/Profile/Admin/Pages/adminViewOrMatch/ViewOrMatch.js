@@ -6,7 +6,7 @@ import { Col, Row, Container } from "../../../../Grid";
 class viewMatch extends Component {
   render() {
     return (
-      <div id="seller">
+      <div id="viewMatch">
         <div className="landing">
           <div className="landing-inner">
             <ul className="nav nav-tabs nav-fill adminNav">
@@ -29,19 +29,24 @@ class viewMatch extends Component {
           </div>
         </div>
         <h1>Matchmaking<br /> </h1>
-        {/* <!--  Content  --> */}
-
+        <div className="viewMatchContainer">
+          <div className="row">
+            <div className="col-m6">
+              {/* <!--  Content  --> */}
               {/* USER PROFILE FROM MONGODB GOES IN THIS CONTAINER*/}
-              <div className="profile-container">
+              <div className="profile-box">
                 <h2>Homeowners</h2>
               </div>
-            
+            </div>
+            <div className="col-m6">
               {/* MATCHING BUYERS GO IN THIS CONTAINER*/}
-              <div className="buyermatch-container">
+              <div className=" buyer-box">
                 <h2>Buyers</h2>
               </div>
-            
-      
+            </div>
+          </div>
+        </div>
+
 
         {/* <!--  Video is muted & autoplays, placed after major DOM elements for performance & has an image fallback  --> */}
         <video autoplay="true" loop id="video-background" muted plays-inline>
