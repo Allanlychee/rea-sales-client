@@ -29,10 +29,17 @@
     text-align: center;
 }
 .profile-box{
-    margin-left:100px;
+    margin-left:50px;
 }
 .viewMatchContainer {
     position: absolute;
     width:100%;
     margin-top: -690px;
+}
+
+.matchBTN {
+    margin-top:90%;
+    margin-left:20px;
+    align-content: center;
+    width:100px;
 }

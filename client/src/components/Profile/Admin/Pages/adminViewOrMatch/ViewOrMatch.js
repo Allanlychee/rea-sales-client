@@ -31,28 +31,34 @@ class viewMatch extends Component {
         <h1>Matchmaking<br /> </h1>
         <div className="viewMatchContainer">
           <div className="row">
-            <div className="col-m6">
+            <div className="col-m5">
               {/* <!--  Content  --> */}
               {/* USER PROFILE FROM MONGODB GOES IN THIS CONTAINER*/}
+
               <div className="profile-box">
                 <h2>Homeowners</h2>
               </div>
             </div>
-            <div className="col-m6">
-              {/* MATCHING BUYERS GO IN THIS CONTAINER*/}
-              <div className=" buyer-box">
-                <h2>Buyers</h2>
+         
+          <div className="col-m2">
+            <div className="btn btn-primary matchBTN">Match
               </div>
+          </div>
+          <div className="col-m5">
+            {/* MATCHING BUYERS GO IN THIS CONTAINER*/}
+            <div className=" buyer-box">
+              <h2>Buyers</h2>
             </div>
           </div>
         </div>
-
-
-        {/* <!--  Video is muted & autoplays, placed after major DOM elements for performance & has an image fallback  --> */}
-        <video autoplay="true" loop id="video-background" muted plays-inline>
-          <source src="https://static.videezy.com/system/resources/previews/000/007/790/original/4K_UHD_Drone_Bellingham_Washington_Neighborhood_Reavealing__Fernando.mp4" type="video/mp4" />
-        </video>
       </div>
+
+
+        {/* <!--  Video is muted & autoplays, placed after major DOM elements for performance & has an image fallback  --> */ }
+    <video autoplay="true" loop id="video-background" muted plays-inline>
+      <source src="https://static.videezy.com/system/resources/previews/000/007/790/original/4K_UHD_Drone_Bellingham_Washington_Neighborhood_Reavealing__Fernando.mp4" type="video/mp4" />
+    </video>
+      </div >
     )
   }
 }
