@@ -27,10 +27,87 @@ class Admin extends Component {
             </ul>
           </div>
 
-        </div>
-      </div>
-    )
-  }
-}
+          <div class='brand'>
+            <a href='https://www.jamiecoulter.co.uk' target='_blank'>
+              <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/logo.png' />
+            </a>
+          </div>
+          {/* <!-- / Begin Body --> */}
+          <div class='swanky'>
+            {/* <!-- / Introduction Block --> */}
+            <div className="swankyContent">
+                
+              
+              </div>
+            {/* <!-- /////////// Begin Dropdown //////////// --> */}
+            <div class='swanky_wrapper'>
+              <input id='Dashboard' name='radio' type='radio' />
+              <label for='Dashboard'>
+                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/dash.png' />
+                <span>Dashboard</span>
+                <div class='lil_arrow'></div>
+                <div class='bar'></div>
+                <div class='swanky_wrapper__content'>
+                  <ul>
+                    <li>Tools</li>
+                    <li>Reports</li>
+                    <li>Analytics</li>
+                    <li>Timeline</li>
+                  </ul>
+                </div>
+              </label>
+              <input id='Sales' name='radio' type='radio' />
+              <label for='Sales'>
+                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/del.png' />
+                <span>Sales</span>
+                <div class='lil_arrow'></div>
+                <div class='bar'></div>
+                <div class='swanky_wrapper__content'>
+                  <ul>
+                    <li>New Sales</li>
+                    <li>Expired Sales</li>
+                    <li>Sales Reports</li>
+                    <li>Deliveries</li>
+                  </ul>
+                </div>
+              </label>
+              <input id='Messages' name='radio' type='radio' />
+              <label for='Messages'>
+                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/mess.png' />
+                <span>Messages</span>
+                <div class='lil_arrow'></div>
+                <div class='bar'></div>
+                <div class='swanky_wrapper__content'>
+                  <ul>
+                    <li>Inbox</li>
+                    <li>Outbox</li>
+                    <li>Sent</li>
+                    <li>Archived</li>
+                  </ul>
+                </div>
+              </label>
+              <input id='Settings' radio='radio' type='radio' />
+              <label for='Settings'>
+                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/set.png' />
+                <span>Settings</span>
+                <div class='lil_arrow'></div>
+                <div class='bar'></div>
+                <div class='swanky_wrapper__content'>
+                  <ul>
+                    <li>Databases</li>
+                    <li>Design</li>
+                    <li>Change User</li>
+                    <li>Log Out</li>
+                  </ul>
+                </div>
+              </label>
+            </div>
 
+          </div>
+          </div>
+        </div>
+        )
+      }
+    }
+    
 export default Admin;

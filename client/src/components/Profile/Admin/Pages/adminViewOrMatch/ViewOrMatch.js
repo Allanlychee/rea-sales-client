@@ -52,7 +52,7 @@ class viewMatch extends Component {
           </div>
         </div>
         <h1>Matchmaking<br /> </h1>
-        <div className="viewMatchContainer">
+        <div className="viewMatchContainer fluid">
           <div className="row">
             <div className="col-m5">
               {/* <!--  Content  --> */}
@@ -107,6 +107,32 @@ class viewMatch extends Component {
                       Financing Completd:  Yes
                         <br />
                       Amount Financed:  $20,000,000
+                        <hr />
+                    </li>
+                  </button>
+                  <button className="buyer-match btn btn-dark">
+                    <li>Name:  Mark Zuckerberg
+                        <br />
+                      Income Range:  $550,000+
+                        <br />
+                      Letter of Approval:  Yes
+                        <br />
+                      Financing Completd:  Yes
+                        <br />
+                      Amount Financed:  $20,000,000
+                        <hr />
+                    </li>
+                  </button>
+                  <button className="buyer-match btn btn-dark">
+                    <li>Name:  Sara Croft
+                        <br />
+                      Income Range:  $750,000+
+                        <br />
+                      Letter of Approval:  Yes
+                        <br />
+                      Financing Completd:  Yes
+                        <br />
+                      Amount Financed:  $50,000,000
                         <hr />
                     </li>
                   </button>

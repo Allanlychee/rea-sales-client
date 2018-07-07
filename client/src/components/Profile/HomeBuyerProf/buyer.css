@@ -1,24 +1,24 @@
 /* Andrew's custom fonts imported */
+
 @font-face {
     font-family: geolight;
     src: url(../../../fonts/GEOMANISTLIGHT.OTF)
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: geomed;
     src: url(../../../fonts/GEOMANISTMEDIUM.OTF)
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: gotham;
     src: url(../../../fonts/GOTHAMPROMEDIUM.OTF)
-  }
+}
 
 .buyerBody {
     background-color: #f3fdfe;
     /* background-image: url('http://alternativealexandriawaterfrontplan.com/wp-content/uploads/unique-beautiful-houses-home-garden-homes-design_294901.jpg'); */
     background: url('http://alternativealexandriawaterfrontplan.com/wp-content/uploads/unique-beautiful-houses-home-garden-homes-design_294901.jpg');
-    
 }
 
 .empty-space {
@@ -28,7 +28,7 @@
 .buyerContainer {
     background-color: rgba(186, 206, 230, 0.897);
     margin-top: -25px;
-    margin-bottom: 80px;    
+    margin-bottom: 80px;
 }
 
 .image-div {
@@ -66,7 +66,10 @@
     margin: 0 auto;
 }
 
-.criteria, .sellermatches, .chat, .favorites {
+.criteria,
+.sellermatches,
+.chat,
+.favorites {
     background-color: #90979f;
     color: #ffffff;
     margin: 15px;
