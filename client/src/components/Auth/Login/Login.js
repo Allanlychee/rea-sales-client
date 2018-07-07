@@ -4,7 +4,6 @@ import './Login.css';
 import { connect, Provider } from 'react-redux';
 import { loginUser } from '../../../actions/authActions';
 
-
 class Login extends Component {
   constructor() {
 
@@ -20,12 +19,21 @@ class Login extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (nextProps.auth.isAuthenticated //nextProps.auth.user.userType='Admin'
-    ) {
-      this.props.history.push('/dashboard')
-    }
-    if (nextProps.errors) {
-      this.setState({ errors: nextProps.errors })
+    // Authentication and redirect for Admin
+    if (nextProps.auth.isAuthenticated) {
+      this.props.history.push('/Dashboard');
+      if (nextProps.auth.user.userType === "Buyer") {
+        this.props.history.push('/Buyer');
+      }
+      if (nextProps.auth.user.userType === "Seller") {
+        this.props.history.push('/Seller');
+      }
+      if (nextProps.auth.user.userType === "Admin") {
+        this.props.history.push('/Admin');
+      }
+      if (nextProps.errors) {
+        this.setState({ errors: nextProps.errors });
+      }
     }
   }
 
@@ -54,12 +62,22 @@ class Login extends Component {
         <h1>USER LOGIN <br /> </h1>
         <div>
 
-          <form class="form-signin">
+          <form class="form-signin" onSubmit={this.onSubmit}>
 
             <label for="inputEmail" class="sr-only">Email address</label>
-            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus />
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus
+              value={this.state.name}
+              onChange={this.onChange}
+              name="email"
+            />
+
+
             <label for="inputPassword" class="sr-only">Password</label>
-            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required />
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required
+              value={this.state.name}
+              onChange={this.onChange}
+              name="password"
+            />
             <div class="checkbox mb-3">
               <label>
                 <input type="checkbox" value="remember-me" /> Remember me
@@ -81,7 +99,7 @@ class Login extends Component {
 Login.PropTypes = {
   loginUser: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
-  errors: PropTypes.object.isRequired
+  errors: PropTypes.object.isRequired,
 }
 
 const mapStateToProps = (state) => ({
