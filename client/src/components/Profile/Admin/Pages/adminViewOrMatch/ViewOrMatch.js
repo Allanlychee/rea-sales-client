@@ -63,52 +63,51 @@ class viewMatch extends Component {
               <div className="profile-box">
                 <h2 className="viewMatchHeaders">Homeowners</h2>
                 <span className="homeList">
-                {this.state.homes.length ? (
-              <ul>
+                  {this.state.homes.length ? (
+                    <ul>
 
-                {this.state.homes.map(Home => (
-                      <a>
-                  <li className="homeListItems" key={Home._id}>
-                    
-                        Name: {Home.name}
-                        <br/>
-                        Address: {Home.address} {Home.city}, {Home.state} {Home.zip}
-                        <br />
-                        Price: {Home.price}
-                        <br />
-                        Description: {Home.description}
-                      <hr/>
-                   
-                  
-                  </li>
-                      </a>
-                ))}
-              </ul>
-            ) : (
-                <h3 className="text-center">No Results to Display</h3>
-              )}
-              </span>
+                      {this.state.homes.map(Home => (
+                        <a>
+                            <button className="homeListItems btn btn-dark">
+                          <li key={Home._id}>
+                              Name: {Home.name}
+                              <br />
+                              Address: {Home.address} {Home.city}, {Home.state} {Home.zip}
+                              <br />
+                              Price: {Home.price}
+                              <br />
+                              Description: {Home.description}
+                            <hr />
+                          </li>
+                            </button>
+                        </a>
+                      ))}
+                    </ul>
+                  ) : (
+                      <h3 className="text-center">No Results to Display</h3>
+                    )}
+                </span>
               </div>
             </div>
-         
-          <div className="col-m2">
-            <div className="btn btn-primary matchBTN">Match
+
+            <div className="col-m2">
+              <div className="btn btn-primary matchBTN">Match
               </div>
-          </div>
-          <div className="col-m5">
-            {/* MATCHING BUYERS GO IN THIS CONTAINER*/}
-            <div className=" buyer-box">
-              <h2 className="viewMatchHeaders">Buyers</h2>
+            </div>
+            <div className="col-m5">
+              {/* MATCHING BUYERS GO IN THIS CONTAINER*/}
+              <div className=" buyer-box">
+                <h2 className="viewMatchHeaders">Buyers</h2>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
 
-        {/* <!--  Video is muted & autoplays, placed after major DOM elements for performance & has an image fallback  --> */ }
-    <video autoplay="true" loop id="video-background" muted plays-inline>
-      <source src="https://static.videezy.com/system/resources/previews/000/007/790/original/4K_UHD_Drone_Bellingham_Washington_Neighborhood_Reavealing__Fernando.mp4" type="video/mp4" />
-    </video>
+        {/* <!--  Video is muted & autoplays, placed after major DOM elements for performance & has an image fallback  --> */}
+        <video autoplay="true" loop id="video-background" muted plays-inline>
+          <source src="https://static.videezy.com/system/resources/previews/000/007/790/original/4K_UHD_Drone_Bellingham_Washington_Neighborhood_Reavealing__Fernando.mp4" type="video/mp4" />
+        </video>
       </div >
     )
   }
