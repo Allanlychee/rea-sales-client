@@ -10,6 +10,7 @@ CLIENT-SIDE
     - React-Router
     - React-Router-DOM
     - React-Scripts
+    - Redux
 
 SERVER-SIDE
     - Axios
@@ -22,4 +23,4 @@ SERVER-SIDE
     - Passport
     - Pasport-jst
     - Validator
-    - Redux
+
