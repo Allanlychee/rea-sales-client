@@ -17,8 +17,7 @@
     z-index: -100;
 }
 
-.profile-box,
-.buyer-box {
+.profile-box {
     color: white;
     margin-left: 20px;
     width: 700px;
@@ -53,10 +52,32 @@
 
 .homeListItems {
     width: 600px;
+    margin-left: 5%;
     color: white;
+    text-align: left;
 }
 
 .viewMatchHeaders {
     text-align: center;
     margin-bottom: 20px;
+}
+
+.buyer-box {
+    color: white;
+    margin-left: 20px;
+    width: 700px;
+    height: 650px;
+    font-size: 16px;
+    line-height: 0.5;
+    background-color: #373d42;
+    opacity: 0.9;
+    overflow: auto;
+}
+
+.buyer-match {
+    color: white;
+    margin-left: 6%;
+    width: 575px;
+    text-align: left;
+    border: none;
 }
