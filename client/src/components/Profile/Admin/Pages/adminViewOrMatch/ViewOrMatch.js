@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import './ViewOrMatch.css'
 import '../adminHome/admin.css'
 import API from "../../../Admin/Utils/adminAddSeller/API"
-import { List, ListItem } from "../../../../List";
-import { Link } from "react-router-dom";
 
 class viewMatch extends Component {
   state = {
