@@ -33,7 +33,7 @@ class Buyer extends Component {
                             <div className="col-sm-4 image-div">
                                 <div className="image-container">
                                     <img
-                                        src="https://chiyawriters.files.wordpress.com/2016/09/headshot-ronni-4-200x200.jpg?w=620"
+                                        src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/19963_1345874970765_7033330_n.jpg?_nc_cat=0&oh=722a750c04032be16071827b1fc90b11&oe=5B9DE268"
                                         className="img-circle"
                                         alt="Avatar"
                                     />

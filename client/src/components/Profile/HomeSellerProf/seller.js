@@ -3,6 +3,9 @@ import './seller.css'
 
 
 class Seller extends Component {
+    componentDidMount() {
+        document.getElementById("criteriaTAB").click()
+       }
   render() {
     return (
 <div className="buyerBody">

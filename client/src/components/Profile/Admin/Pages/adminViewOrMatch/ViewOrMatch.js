@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import './ViewOrMatch.css'
 import '../adminHome/admin.css'
 import API from "../../../Admin/Utils/adminAddSeller/API"
-import { List, ListItem } from "../../../../List";
-import { Link } from "react-router-dom";
 
 class viewMatch extends Component {
   state = {
@@ -68,8 +66,8 @@ class viewMatch extends Component {
 
                       {this.state.homes.map(Home => (
                         <a>
-                            <button className="homeListItems btn btn-dark">
-                          <li key={Home._id}>
+                          <button className="homeListItems btn btn-dark">
+                            <li key={Home._id}>
                               Name: {Home.name}
                               <br />
                               Address: {Home.address} {Home.city}, {Home.state} {Home.zip}
@@ -77,9 +75,9 @@ class viewMatch extends Component {
                               Price: {Home.price}
                               <br />
                               Description: {Home.description}
-                            <hr />
-                          </li>
-                            </button>
+                              <hr />
+                            </li>
+                          </button>
                         </a>
                       ))}
                     </ul>
@@ -98,6 +96,21 @@ class viewMatch extends Component {
               {/* MATCHING BUYERS GO IN THIS CONTAINER*/}
               <div className=" buyer-box">
                 <h2 className="viewMatchHeaders">Buyers</h2>
+                <ul>
+                  <button className="buyer-match btn btn-dark">
+                    <li>Name:  Gal Gadot
+                        <br />
+                      Income Range:  $150,000+
+                        <br />
+                      Letter of Approval:  Yes
+                        <br />
+                      Financing Completd:  Yes
+                        <br />
+                      Amount Financed:  $20,000,000
+                        <hr />
+                    </li>
+                  </button>
+                </ul>
               </div>
             </div>
           </div>
