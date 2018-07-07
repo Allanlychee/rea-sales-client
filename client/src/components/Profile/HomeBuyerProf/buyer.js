@@ -122,7 +122,7 @@ class Buyer extends Component {
                                         <div className="col-sm-12">
                                             <p>
                                                 <h5>
-                                                    Price: <span>$465,000</span>
+                                                    Price Range: <span>$1,000,000-$1,250,000</span>
                                                 </h5>
                                             </p>
                                             <p>
@@ -137,7 +137,7 @@ class Buyer extends Component {
                                             </p>
                                             <p>
                                                 <h5>
-                                                    # Bathrooms: <span>3.5</span>
+                                                    # Bathrooms: <span>3</span>
                                                 </h5>
                                             </p>
                                             <p>
