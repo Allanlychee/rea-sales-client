@@ -90,7 +90,7 @@ const MyMapComponent = compose(
     withProps({
         googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBe4e-dSQ2ZNtQVt0rr2_E5z9amEQYquAA&v=3.exp&libraries=geometry,drawing,places",
         loadingElement: <div style={{ height: `100%` }} />,
-        containerElement: <div style={{ height: `720px` }} />,
+        containerElement: <div style={{ height: `620px` }} />,
         mapElement: <div style={{ height: `100%` }} />,
     }),
     withScriptjs,
