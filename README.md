@@ -1,26 +1,28 @@
-# rea-sales-client
+<h1>rea-sales-client</h1>
 
-Real-Estate Lead Generator Web Site created with the following:
+<h3>Real-Estate Lead Generator Web Site created with the following:</h3>
 
-CLIENT-SIDE
-    - React-CRUD-Table
-    - React - DOM
-    - React-Geocode
-    - React-Google-Maps
-    - React-Router
-    - React-Router-DOM
-    - React-Scripts
-    - Redux
+<ul><h4>CLIENT-SIDE</h4>
+   <li> React-CRUD-Table
+   <li> React - DOM
+   <li> React-Geocode
+   <li> React-Google-Maps
+   <li> React-Router
+   <li> React-Router-DOM
+   <li> React-Scripts
+   <li> Redux
+    </ul>
 
-SERVER-SIDE
-    - Axios
-    - Bcrypt
-    - Body-Parser
-    - Dotenv
-    - JSON Web Token
-    - Mongoose
-    - Multer
-    - Passport
-    - Pasport-jst
-    - Validator
+<ul><h4>SERVER-SIDE</h4>
+   <li> Axios
+   <li> Bcrypt
+   <li> Body-Parser
+   <li> Dotenv
+   <li> JSON Web Token
+   <li> Mongoose
+   <li> Multer
+   <li> Passport
+   <li> Pasport-jst
+   <li> Validator
+       </ul>
 
