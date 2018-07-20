@@ -76,7 +76,7 @@ class viewMatch extends Component {
 
                       {this.state.homes.map(Home => (
                         <a>
-                          <button className= {"homeListItems btn btn-dark yourBTN"+ " " + `${this.state.active}`}
+                          <button className="homeListItems btn btn-dark yourBTN"
                            variant="raised"
                            onClick={this.handleClick}
                           >

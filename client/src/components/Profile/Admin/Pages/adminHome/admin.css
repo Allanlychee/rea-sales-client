@@ -391,8 +391,8 @@ input[type='radio']:checked+label li:nth-of-type(4) {
     position: absolute;
     margin-top:2px;
     left: 235px;
-    width: 1368px;
-    height: 675px;
+    width: 239%;
+    height: 715px;
     font-size: 16px;
     line-height: 0.5;
     background-color: #373d42;

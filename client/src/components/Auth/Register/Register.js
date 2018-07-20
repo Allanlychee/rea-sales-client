@@ -141,7 +141,6 @@ class Register extends Component {
         </video>
       </div>
     );
-    {/* <!--  Video is muted & autoplays, placed after major DOM elements for performance & has an image fallback  --> */ }
   }
 }
 

@@ -29,7 +29,7 @@ class Admin extends Component {
 
           <div class='brand'>
             <a href='https://www.jamiecoulter.co.uk' target='_blank'>
-              <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/logo.png' />
+              <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/logo.png' alt="swankyLogo" />
             </a>
           </div>
           {/* <!-- / Begin Body --> */}
@@ -43,7 +43,7 @@ class Admin extends Component {
             <div class='swanky_wrapper'>
               <input id='Dashboard' name='radio' type='radio' />
               <label for='Dashboard'>
-                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/dash.png' />
+                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/dash.png' alt="swankyDash"/>
                 <span>Dashboard</span>
                 <div class='lil_arrow'></div>
                 <div class='bar'></div>
@@ -58,7 +58,7 @@ class Admin extends Component {
               </label>
               <input id='Sales' name='radio' type='radio' />
               <label for='Sales'>
-                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/del.png' />
+                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/del.png' alt="swankySales"/>
                 <span>Sales</span>
                 <div class='lil_arrow'></div>
                 <div class='bar'></div>
@@ -73,7 +73,7 @@ class Admin extends Component {
               </label>
               <input id='Messages' name='radio' type='radio' />
               <label for='Messages'>
-                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/mess.png' />
+                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/mess.png' alt ="swankyMsges"/>
                 <span>Messages</span>
                 <div class='lil_arrow'></div>
                 <div class='bar'></div>
@@ -88,7 +88,7 @@ class Admin extends Component {
               </label>
               <input id='Settings' radio='radio' type='radio' />
               <label for='Settings'>
-                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/set.png' />
+                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/set.png' alt="swankySettings"/>
                 <span>Settings</span>
                 <div class='lil_arrow'></div>
                 <div class='bar'></div>

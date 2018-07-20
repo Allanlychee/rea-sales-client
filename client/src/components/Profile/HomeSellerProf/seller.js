@@ -153,10 +153,10 @@ class Seller extends Component {
                                         </div>
                                         <div className="row card-row">
                                             <div className="col-sm-5 seller-match-cards">
-                                            <img src="../client/src/components/Profile/HomeBuyerProf/HomeMatch-02.png" />
+                                            <img src="../client/src/components/Profile/HomeBuyerProf/HomeMatch-02.png" alt="homeMatch2"/>
                                             </div>
                                             <div className="col-sm-5 seller-match-cards">
-                                            <img src="HomeMatch-01.png" />
+                                            <img src="HomeMatch-01.png" alt="homeMatch1"/>
                                             </div>
                                             
                                         </div>
